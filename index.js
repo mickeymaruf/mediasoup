@@ -10,7 +10,7 @@ const key = fs.readFileSync("./config/cert.key");
 const cert = fs.readFileSync("./config/cert.crt");
 const options = { key, cert };
 // const httpServer = http.createServer(app);
-// const httpsServer = https.createServer(options, app); // change 2 places
+const httpsServer = https.createServer(options, app); // change 2 places
 
 const socketio = require("socket.io");
 const io = socketio(httpsServer);
