@@ -51,12 +51,12 @@ io.on("connect", (socket) => {
         {
           protocol: "udp",
           ip: "0.0.0.0",
-          announcedIp: "34.126.127.101",
+          announcedIp: "54.237.220.161",
         },
         {
           protocol: "tcp",
           ip: "0.0.0.0",
-          announcedIp: "34.126.127.101",
+          announcedIp: "54.237.220.161",
         },
       ],
     });
@@ -137,4 +137,4 @@ io.on("connect", (socket) => {
   });
 });
 
-httpsServer.listen(5000);
+httpsServer.listen(5001);
