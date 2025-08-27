@@ -9,7 +9,7 @@ let consumer = null;
 
 // Connect to server
 const initConnect = () => {
-  socket = io("https://34.126.127.101:5000");
+  socket = io("https://192.168.0.102:5001");
   connectButton.innerHTML = "Connecting...";
   connectButton.disabled = true;
   addSocketListener();

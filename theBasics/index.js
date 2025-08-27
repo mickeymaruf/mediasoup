@@ -15,7 +15,6 @@ const httpsServer = https.createServer(options, app); // change 2 places
 const socketio = require("socket.io");
 const io = socketio(httpsServer);
 
-const mediasoup = require("mediasoup");
 const createWorkers = require("./createWorkers");
 const { mediaCodecs } = require("./config/config");
 
@@ -51,12 +50,12 @@ io.on("connect", (socket) => {
         {
           protocol: "udp",
           ip: "0.0.0.0",
-          announcedIp: "54.237.220.161",
+          announcedIp: "192.168.0.102",
         },
         {
           protocol: "tcp",
           ip: "0.0.0.0",
-          announcedIp: "54.237.220.161",
+          announcedIp: "192.168.0.102",
         },
       ],
     });
