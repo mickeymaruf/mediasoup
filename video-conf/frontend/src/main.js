@@ -4,7 +4,7 @@ import buttons from "./uiStuff/buttons";
 import { Device } from "mediasoup-client";
 import requestTransportToConsume from "../mediasoupFunctions/requestTransportToConsume";
 
-const socket = io("http://52.45.149.140:5002");
+const socket = io("https://mediasoup-testing.lapatalk.com");
 
 let device = null;
 let localStream = null;
